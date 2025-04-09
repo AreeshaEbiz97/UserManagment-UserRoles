@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3cfede9b-1713-437d-ba30-88957279bd91" name="Areesha.Raees@QA-AREESHA 2025-04-07 16:20:50" runUser="QA-AREESHA\Areesha.Raees" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-04-07T16:20:50.1987386+05:00" queuing="2025-04-07T16:20:50.1987390+05:00" start="2025-04-07T16:19:30.4547153+05:00" finish="2025-04-07T16:20:51.5295372+05:00" />
+  <TestSettings name="default" id="4c72fcf8-bc3d-4b49-bbd8-99ea2f89403e">
+    <Deployment runDeploymentRoot="Areesha.Raees_QA-AREESHA_2025-04-07_16_20_50" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6310e904-2591-4054-95dc-fb5d654587de" testId="44ac3f0f-2741-8606-825e-39dc508b627e" testName="CreateANewRoleAndAssignPermissions" computerName="QA-AREESHA" duration="00:01:16.0804570" startTime="2025-04-07T16:19:32.9398241+05:00" endTime="2025-04-07T16:20:49.0213891+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6310e904-2591-4054-95dc-fb5d654587de">
+      <Output>
+        <StdOut>Given I am logged in as an admin with valid credentials&#xD;
+-&gt; done: RoleTestsSteps.GivenIAmLoggedInAsAdminWithValidCredentials() (4.5s)&#xD;
+When I navigate to the "Roles" page&#xD;
+-&gt; done: RoleTestsSteps.WhenINavigateToThePage("Roles") (23.6s)&#xD;
+And I create a new role named "Pak1231"&#xD;
+-&gt; done: RoleTestsSteps.WhenICreateANewRoleNamed("Pak1231") (7.7s)&#xD;
+And I select the role "Pak1231"&#xD;
+-&gt; done: RoleTestsSteps.WhenISelectTheRole("Pak1231") (0.6s)&#xD;
+And I assign the "Create" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Create") (0.2s)&#xD;
+And I assign the "Edit" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Edit") (0.1s)&#xD;
+And I assign the "Delete" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Delete") (0.0s)&#xD;
+And I assign the "Email" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Email") (0.1s)&#xD;
+Then the role permissions should be saved successfully&#xD;
+-&gt; error: Timeout 30000ms exceeded.&#xD;
+Call log:&#xD;
+  -   - waiting for GetByRole(AriaRole.Button, new() { Name = "OK" }) (30.1s)</StdOut>
+        <ErrorInfo>
+          <Message>System.TimeoutException : Timeout 30000ms exceeded.&#xD;
+Call log:&#xD;
+  -   - waiting for GetByRole(AriaRole.Button, new() { Name = "OK" })</Message>
+          <StackTrace>   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206&#xD;
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 535&#xD;
+   at Pages.RolePage.SavePermissions() in C:\Projects\Playwright\RolesUserManagment\Pages\RolesPage.cs:line 111&#xD;
+   at Tests.RoleTestsSteps.ThenTheRolePermissionsShouldBeSavedSuccessfully() in C:\Projects\Playwright\RolesUserManagment\RolesTestStep.cs:line 75&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at RolesUserManagment.RoleManagementFeature.ScenarioCleanup()&#xD;
+   at RolesUserManagment.RoleManagementFeature.CreateANewRoleAndAssignPermissions() in C:\Projects\Playwright\RolesUserManagment\RoleTests.feature:line 16&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CreateANewRoleAndAssignPermissions" storage="c:\projects\playwright\rolesusermanagment\bin\debug\net9.0\rolesusermanagment.dll" id="44ac3f0f-2741-8606-825e-39dc508b627e">
+      <Execution id="6310e904-2591-4054-95dc-fb5d654587de" />
+      <TestMethod codeBase="C:\Projects\Playwright\RolesUserManagment\bin\Debug\net9.0\RolesUserManagment.dll" adapterTypeName="executor://nunit3testexecutor/" className="RolesUserManagment.RoleManagementFeature" name="CreateANewRoleAndAssignPermissions" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="44ac3f0f-2741-8606-825e-39dc508b627e" executionId="6310e904-2591-4054-95dc-fb5d654587de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running all tests in C:\Projects\Playwright\RolesUserManagment\bin\Debug\net9.0\RolesUserManagment.dll&#xD;
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Given I am logged in as an admin with valid credentials&#xD;
+-&gt; done: RoleTestsSteps.GivenIAmLoggedInAsAdminWithValidCredentials() (4.5s)&#xD;
+When I navigate to the "Roles" page&#xD;
+-&gt; done: RoleTestsSteps.WhenINavigateToThePage("Roles") (23.6s)&#xD;
+And I create a new role named "Pak1231"&#xD;
+-&gt; done: RoleTestsSteps.WhenICreateANewRoleNamed("Pak1231") (7.7s)&#xD;
+And I select the role "Pak1231"&#xD;
+-&gt; done: RoleTestsSteps.WhenISelectTheRole("Pak1231") (0.6s)&#xD;
+And I assign the "Create" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Create") (0.2s)&#xD;
+And I assign the "Edit" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Edit") (0.1s)&#xD;
+And I assign the "Delete" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Delete") (0.0s)&#xD;
+And I assign the "Email" permission to the role&#xD;
+-&gt; done: RoleTestsSteps.WhenIAssignThePermissionToTheRole("Email") (0.1s)&#xD;
+Then the role permissions should be saved successfully&#xD;
+-&gt; error: Timeout 30000ms exceeded.&#xD;
+Call log:&#xD;
+  -   - waiting for GetByRole(AriaRole.Button, new() { Name = "OK" }) (30.1s)&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

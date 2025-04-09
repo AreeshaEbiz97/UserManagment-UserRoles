@@ -1,0 +1,15 @@
+{
+  "bindingCulture": {
+    "name": "en-US"
+  },
+  "language": "en",
+  "plugins": [
+    {
+      "name": "SpecFlow.Plus.LivingDocPlugin",
+      "type": "Generator",
+      "arguments": {
+        "outputFolder": "TestResults"
+      }
+    }
+  ]
+}
