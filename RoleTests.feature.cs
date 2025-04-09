@@ -98,10 +98,10 @@ namespace RolesUserManagment
     testRunner.When("I navigate to the \"Roles\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
-    testRunner.And("I create a new role named \"Pak923\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I create a new role named \"Pak9223\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
-    testRunner.And("I select the role \"Pak923\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I select the role \"Pak9223\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
     testRunner.And("I assign the \"Create\" permission to the role", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
