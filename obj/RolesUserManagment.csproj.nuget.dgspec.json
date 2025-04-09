@@ -61,7 +61,7 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.3, )"
+              "version": "[4.3.2, )"
             },
             "NUnit.Analyzers": {
               "target": "Package",
@@ -69,7 +69,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.6.0, )"
+              "version": "[5.0.0, )"
             },
             "SpecFlow.NUnit": {
               "target": "Package",
