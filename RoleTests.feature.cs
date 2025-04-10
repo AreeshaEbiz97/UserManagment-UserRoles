@@ -101,7 +101,7 @@ namespace RolesUserManagment
     testRunner.And("I create a new role named \"Pak9223\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
-    testRunner.And("I select the role \"Pak9223\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("I select the role \"Pak92s23\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
     testRunner.And("I assign the \"Create\" permission to the role", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

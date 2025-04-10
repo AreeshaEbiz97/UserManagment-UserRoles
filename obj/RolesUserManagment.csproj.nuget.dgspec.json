@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\New folder\\UserManagment-UserRoles\\RolesUserManagment.csproj",
         "projectName": "RolesUserManagment",
         "projectPath": "C:\\New folder\\UserManagment-UserRoles\\RolesUserManagment.csproj",
-        "packagesPath": "C:\\Windows\\system32\\config\\systemprofile\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
         "outputPath": "C:\\New folder\\UserManagment-UserRoles\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,15 +61,19 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[4.3.2, )"
+              "version": "[3.13.3, )"
             },
             "NUnit.Analyzers": {
               "target": "Package",
               "version": "[4.4.0, )"
             },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.11.1, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.0.0, )"
             },
             "SpecFlow.NUnit": {
               "target": "Package",

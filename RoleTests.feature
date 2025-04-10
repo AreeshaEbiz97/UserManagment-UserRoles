@@ -8,7 +8,7 @@ Feature: Role Management
     Given I am logged in as an admin with valid credentials
     When I navigate to the "Roles" page
     And I create a new role named "Pak9223"
-    And I select the role "Pak9223"
+    And I select the role "Pak92s23"
     And I assign the "Create" permission to the role
     And I assign the "Edit" permission to the role
     And I assign the "Delete" permission to the role
