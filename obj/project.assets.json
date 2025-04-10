@@ -6194,7 +6194,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Windows\\system32\\config\\systemprofile\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6202,11 +6202,11 @@
       "projectUniqueName": "C:\\New folder\\UserManagment-UserRoles\\RolesUserManagment.csproj",
       "projectName": "RolesUserManagment",
       "projectPath": "C:\\New folder\\UserManagment-UserRoles\\RolesUserManagment.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Windows\\system32\\config\\systemprofile\\.nuget\\packages\\",
       "outputPath": "C:\\New folder\\UserManagment-UserRoles\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
