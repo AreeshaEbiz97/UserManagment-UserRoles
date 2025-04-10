@@ -7,8 +7,8 @@ Feature: Role Management
   Scenario: Create a new role and assign permissions
     Given I am logged in as an admin with valid credentials
     When I navigate to the "Roles" page
-    And I create a new role named "permission925"
-    And I select the role "permission925"
+    And I create a new role named "permission926"
+    And I select the role "permission926"
     And I assign the "Create" permission to the role
     And I assign the "Edit" permission to the role
     And I assign the "Delete" permission to the role
